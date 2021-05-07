@@ -16,6 +16,5 @@ func main() {
 	<-shutdown.Hook(syscall.SIGINT, syscall.SIGTERM)
 
 	fmt.Println("bye, bye")
-
 }
 ```
