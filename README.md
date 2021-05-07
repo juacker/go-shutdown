@@ -13,7 +13,7 @@ import (
 func main() {
 	fmt.Println("Waiting for stop signal")
 
-	<-shutdown.Hook(syscall.SIGINT, syscall.SIGTERM)
+	shutdown.Hook(syscall.SIGINT, syscall.SIGTERM)
 
 	fmt.Println("bye, bye")
 }
